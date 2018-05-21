@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/add_measurements_action_revert"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Revert"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_measurements_action_next"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Next"
+        app:showAsAction="always" />
+
+    <!-- Settings, should always be in the overflow -->
+
+</menu>
