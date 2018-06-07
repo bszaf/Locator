@@ -87,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreateOptionsMenu(menu);
 
-        menu.add("Hi");
-
         return true;
     }
 
