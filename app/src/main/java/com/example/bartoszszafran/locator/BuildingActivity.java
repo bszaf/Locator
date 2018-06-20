@@ -27,6 +27,7 @@ public class BuildingActivity extends AppCompatActivity {
     private BuildingTopology mBuilding;
     private boolean drawKnownfields = false;
     private Position mPos;
+    private int K = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +126,7 @@ public class BuildingActivity extends AppCompatActivity {
                         elem.level = s.level;
                         r.add(elem);
                     }
-                    mPos = Locator.locate(mBuilding.positionToRouterSignalStrength, r);
+                    mPos = Locator.locate(mBuilding.positionToRouterSignalStrength, r, K);
                     invalidate();
                     context.unregisterReceiver(this);
                 }
